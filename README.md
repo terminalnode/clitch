@@ -1,3 +1,6 @@
+![cargo build](https://github.com/terminalnode/clitch/actions/workflows/cargo-build.yml/badge.svg)
+![cargo fmt](https://github.com/terminalnode/clitch/actions/workflows/cargo-fmt.yml/badge.svg)
+
 # Clitch
 A CLI watch, exposing a number (two, to be precise) of subcommands for working with time.
 
