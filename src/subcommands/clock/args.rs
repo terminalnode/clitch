@@ -11,4 +11,8 @@ pub struct ClockArgs {
     /// If set in combination with -c / --continuous, overwrite the previous line instead of printing a new line
     #[arg(short = 'o', long = "overwrite")]
     pub overwrite: bool,
+
+    /// Output format for the time (see https://docs.rs/chrono/latest/chrono/format/strftime/)
+    #[arg(short = 'f', long = "format", default_value = "%H:%M:%S")]
+    pub format: String,
 }

@@ -11,13 +11,11 @@ use crossterm::terminal::{Clear, ClearType};
 use crate::cli::subcmd::RunnableSubCmd;
 use crate::subcommands::ClockArgs;
 
-const FMT: &str = "%H:%M:%S";
-
 impl ClockArgs {
     fn get_text(&self) -> (String, u32) {
         let datetime = Local::now();
         let nanos = 1_000_000_000 - datetime.time().nanosecond();
-        let now = datetime.format(FMT).to_string();
+        let now = datetime.format(&self.format).to_string();
         (now, nanos)
     }
 }
