@@ -15,11 +15,11 @@ has a help menu that can be accessed either with `clitch help <subcommand>` or `
 If no subcommand is specified, the default subcommand is `clock`. But to show the `clock` help you still need to
 specify its name explicitly (e.g. `clitch help clock` or `clitch clock -h`).
 
-### `clock`
-Shows local time in the format `HH:MM:SS`.
-
 <details>
-<summary>Example</summary>
+<summary><b>clock</b></summary>
+<p>
+Shows local time in the format HH:MM:SS.
+</p>
 
 ```shell
 $ clitch clock
@@ -38,11 +38,12 @@ $ clitch clock -co
 ```
 </details>
 
-### `countdown`
-This subcommand is identical to [countdown.rs](https://github.com/terminalnode/countdown.rs).
-
 <details>
-<summary>Example</summary>
+<summary><b>countdown</b></summary>
+<p>
+This subcommand is identical to <a href="https://github.com/terminalnode/countdown.rs">countdown.rs</a>, as the
+name implies it counts the time between now and a provided target time.
+</p>
 
 ```shell
 $ clitch countdown -d 2024-03-23 -t 10:00 -v
