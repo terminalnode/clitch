@@ -33,8 +33,8 @@ $ clitch clock -c
 ^C
 
 # This variant will update the remaining time on the same line, instead of printing a new line every second
-$ clitch clock -co
-20:26:35
+$ clitch clock -cof '(%a) %d %h %H:%M:%S'
+(Thu) 21 Mar 20:26:35
 ```
 </details>
 
