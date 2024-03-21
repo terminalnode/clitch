@@ -16,16 +16,33 @@ If no subcommand is specified, the default subcommand is `clock`. But to show th
 specify its name explicitly (e.g. `clitch help clock` or `clitch clock -h`).
 
 ### `clock`
-Currently only shows local time in the format `HH:MM:SS`.
-The idea is to eventually expose functions similar to `countdown`, mainly such as `-c` / `--continuous`.
+Shows local time in the format `HH:MM:SS`.
+
+<details>
+<summary>Example</summary>
 
 ```shell
 $ clitch clock
-15:36:16
+20:26:23
+
+$ clitch clock -c
+20:26:26
+20:26:27
+20:26:28
+20:26:29
+^C
+
+# This variant will update the remaining time on the same line, instead of printing a new line every second
+$ clitch clock -co
+20:26:35
 ```
+</details>
 
 ### `countdown`
 This subcommand is identical to [countdown.rs](https://github.com/terminalnode/countdown.rs).
+
+<details>
+<summary>Example</summary>
 
 ```shell
 $ clitch countdown -d 2024-03-23 -t 10:00 -v
@@ -47,3 +64,4 @@ Now:    2024-03-18 10:40:58 (+01:00)
 Target: 2024-03-23 10:00:00 (CET)
 4 days 23:18:54
 ```
+</details>
